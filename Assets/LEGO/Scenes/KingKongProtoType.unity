@@ -15669,6 +15669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: king kong
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: efe6ed103cec62e46b200ddb11877cdd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe6ed103cec62e46b200ddb11877cdd, type: 3}
 --- !u!1 &385405544
@@ -69731,7 +69736,7 @@ PrefabInstance:
     - target: {fileID: 9078427627668221896, guid: 934668409d4904809a1489b29640e933,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 934668409d4904809a1489b29640e933, type: 3}
