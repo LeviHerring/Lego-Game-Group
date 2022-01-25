@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
 
     public float jumpHeight = 15.0f;
 
-    public bool isGrounded = true; 
+    public bool isGrounded = true;
+
+    public Transform groundCheck;
 
     void Start()
     {
@@ -23,13 +25,24 @@ public class PlayerController : MonoBehaviour
 
         Rigidbody rigidbody = GetComponent<Rigidbody>();
 
+        if ((Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Platform"))))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.forward * Time.deltaTime * movementSpeed;
+            transform.localScale = new Vector3(0.07227582f, 0.07227582f, -0.07227582f);
         }
         else if (Input.GetKey(KeyCode.S))
         {
             rigidbody.position += Vector3.back * Time.deltaTime * movementSpeed;
+            transform.localScale = new Vector3(0.07227582f, 0.07227582f, 0.07227582f);
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -57,4 +70,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-}
+
+    private void FixedUpdate()
+    {
+        if ((Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"))))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false; 
+        }
+
+    }
+
+    }
