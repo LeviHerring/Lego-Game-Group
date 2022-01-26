@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LEGO/Scenes/Menu Lose.unity
     guid: 23bd42193fd3048b7b6f4dedf8f3317a
+  - enabled: 1
+    path: Assets/LEGO/Scenes/Skull-Island.unity
+    guid: c9f39a815f574e14b90105ee73357683
   m_configObjects: {}
