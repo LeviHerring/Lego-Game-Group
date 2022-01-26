@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform groundCheck;
 
+    [SerializeField] private float jumpForce = 10f;
+
     void Start()
     {
         BoxCollider collider = GetComponent<BoxCollider>();
@@ -25,63 +27,52 @@ public class PlayerController : MonoBehaviour
 
         Rigidbody rigidbody = GetComponent<Rigidbody>();
 
-        if ((Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Platform"))))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
+        //if ((Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Platform"))))
+        //{
+        //    isGrounded = true;
+        //}
+        //else
+        //{
+        //    isGrounded = false;
+        //}
 
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.forward * Time.deltaTime * movementSpeed;
-            transform.localScale = new Vector3(0.07227582f, 0.07227582f, -0.07227582f);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else if (Input.GetKey(KeyCode.S))
         {
             rigidbody.position += Vector3.back * Time.deltaTime * movementSpeed;
-            transform.localScale = new Vector3(0.07227582f, 0.07227582f, 0.07227582f);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else if (Input.GetKey(KeyCode.A))
         {
+            transform.localRotation = Quaternion.Euler(0, 90, 0); 
             rigidbody.position += Vector3.left * Time.deltaTime * movementSpeed;
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            transform.localRotation = Quaternion.Euler(0, -90, 0);
             rigidbody.position += Vector3.right * Time.deltaTime * movementSpeed;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rigidbody.position += Vector3.up * jumpHeight;
-            isGrounded = false; 
+            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, jumpForce, 1);
+
         }
 
        
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Platform")
-        {
-            isGrounded = true; 
-        }
-    }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.tag == "Platform")
+    //    {
+    //        isGrounded = true; 
+    //    }
+    //}
 
-
-    private void FixedUpdate()
-    {
-        if ((Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"))))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false; 
-        }
-
-    }
 
     }
