@@ -7,11 +7,19 @@ public class gacksEpicPM : MonoBehaviour
     public float speed;
     public float rotationSpeed;
 
-   
+    public bool isGrounded; 
+
+    [SerializeField] private float jumpForce = 10f;
+
+    
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
 
     // Update is called once per frame
@@ -30,6 +38,15 @@ public class gacksEpicPM : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        {
+            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, jumpForce, 1);
+            isGrounded = false; 
+
         }
     }
 }
