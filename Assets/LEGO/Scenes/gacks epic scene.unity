@@ -1163,7 +1163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1044720317
 MonoBehaviour:
   m_ObjectHideFlags: 8
@@ -3086,7 +3086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   rotationSpeed: 720
-  isGrounded: 0
   jumpForce: 10
 --- !u!1001 &1713294095
 PrefabInstance:

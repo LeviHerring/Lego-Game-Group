@@ -7,7 +7,10 @@ public class GroundCheckEpic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BoxCollider collider = GetComponent<BoxCollider>();
+        //BoxCollider collider = GetComponent<BoxCollider>();
+
+        GameObject kingKong = GameObject.Find("Player");
+        gacksEpicPM playerScript = kingKong.GetComponent<gacksEpicPM>();
     }
 
     // Update is called once per frame
@@ -20,14 +23,14 @@ public class GroundCheckEpic : MonoBehaviour
     {
         if (other.tag == "Platform")
         {
-            GetComponent<gacksEpicPM>().isGrounded = true;
+            gacksEpicPM.isGrounded = true;
         }
         
     }
 
     private void OnTriggerExit(Collider other)
     {
-        GetComponent<gacksEpicPM>().isGrounded = false;
+        gacksEpicPM.isGrounded = false;
     }
 }
 
