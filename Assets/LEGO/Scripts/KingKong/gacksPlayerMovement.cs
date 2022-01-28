@@ -5,7 +5,7 @@ public class gacksPlayerMovement: MonoBehaviour
 {
 
     public float playerSpeed;
-    public float walkSpeed = 0.0000000000000001f;
+    public float walkSpeed = 10f;
     public float mouseSensitivity = 2f;
     public float jumpHeight = 3f;
     private bool isMoving = false;
@@ -15,13 +15,20 @@ public class gacksPlayerMovement: MonoBehaviour
     private Animator anim;
     private Rigidbody rigidBody;
 
+    [SerializeField] private float jumpForce = 10f;
+    public Transform groundCheck;
+
+    public bool isGrounded = true;
+
     // Use this for initialization
     void Start()
     {
 
         playerSpeed = walkSpeed;
-        anim = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
+
+        BoxCollider collider = GetComponent<BoxCollider>();
+        isGrounded = true;
 
     }
 
@@ -47,9 +54,9 @@ public class gacksPlayerMovement: MonoBehaviour
             isMoving = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            transform.Translate(Vector3.up * jumpHeight);
+            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, jumpForce, 1);
         }
 
         

@@ -18,11 +18,11 @@ public class GroundCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GetComponent<PlayerController>().isGrounded = true; 
+        GetComponent<gacksPlayerMovement>().isGrounded = true; 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        GetComponent<PlayerController>().isGrounded = false;
+        GetComponent<gacksPlayerMovement>().isGrounded = false;
     }
 }
