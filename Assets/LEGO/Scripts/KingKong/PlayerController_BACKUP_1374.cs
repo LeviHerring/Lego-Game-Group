@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class PlayerController_BACKUP_1374 : MonoBehaviour
 {
 
     public float movementSpeed = 50.0f;
@@ -48,11 +48,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.A))
         {
-<<<<<<< HEAD
+//<<<<<<< HEAD
             transform.localRotation = Quaternion.Euler(0, 90, 0);
-=======
+//=======
             transform.localRotation = Quaternion.Euler(0, 90, 0); 
->>>>>>> 4980765ff08f72aa9ebfbaa2d1420add8a408797
+//>>>>>>> 4980765ff08f72aa9ebfbaa2d1420add8a408797
             rigidbody.position += Vector3.left * Time.deltaTime * movementSpeed;
         }
         else if (Input.GetKey(KeyCode.D))
@@ -68,11 +68,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     }
 
-=======
->>>>>>> 4980765ff08f72aa9ebfbaa2d1420add8a408797
+//=======
+//>>>>>>> 4980765ff08f72aa9ebfbaa2d1420add8a408797
     //public void OnTriggerEnter(Collider other)
     //{
     //    if(other.tag == "Platform")

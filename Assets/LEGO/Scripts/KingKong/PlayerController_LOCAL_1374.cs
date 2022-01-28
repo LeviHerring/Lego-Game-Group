@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class PlayerController_LOCAL_1374 : MonoBehaviour
 {
 
     public float movementSpeed = 50.0f;
