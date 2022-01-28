@@ -16,6 +16,6 @@ public class KongMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = (transform.forward / -1) * speed;
+        rb.velocity = (transform.right / -1) * speed;
     }
 }
