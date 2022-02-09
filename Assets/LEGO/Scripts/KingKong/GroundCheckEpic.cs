@@ -23,6 +23,7 @@ public class GroundCheckEpic : MonoBehaviour
     {
         if (other.tag == "Platform")
         {
+            Debug.Log("Grounded!");
             gacksEpicPM.isGrounded = true;
         }
         
