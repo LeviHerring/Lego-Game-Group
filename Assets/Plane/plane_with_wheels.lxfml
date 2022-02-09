@@ -1,0 +1,111 @@
+<LXFML versionMajor="5" versionMinor="0" name="plane_with_wheels">
+  <Meta>
+    <Application name="LDraw Converter" versionMajor="2.22.1" versionMinor="1&#xD;" />
+  </Meta>
+  <Cameras>
+    <Camera refID="0" orthographic="False" fieldOfView="15" distance="123.6314" transformation="-0.7986356,7.450581E-09,-0.601815,0.1969946,0.9449086,-0.2614207,0.5686602,-0.3273342,-0.7546376,94.417,-26.96179,-82.32073" />
+  </Cameras>
+  <Bricks cameraRef="0">
+    <Brick refID="0" designID="4488">
+      <Part refID="0" designID="4488" partType="rigid" materials="1,0">
+        <Bone refID="0" transformation="-2.131628E-14,-1.78814E-07,-0.9999999,1,-1.192093E-07,0,-1.192093E-07,-1,1.788139E-07,56.332,-8.393676,-34.8" />
+      </Part>
+    </Brick>
+    <Brick refID="1" designID="3034" itemNos="303424">
+      <Part refID="1" designID="3034" partType="rigid" materials="24,0">
+        <Bone refID="1" transformation="4.172325E-07,-3.427267E-06,-1,1,-5.960464E-07,4.470348E-07,-5.662441E-07,-1,3.397465E-06,56.652,-5.193666,-32.4" />
+      </Part>
+    </Brick>
+    <Brick refID="2" designID="3034" itemNos="303401">
+      <Part refID="2" designID="3034" partType="rigid" materials="1,0">
+        <Bone refID="2" transformation="-1.192093E-07,-1,0,1,-1.192093E-07,0,0,0,1,56.332,-1.993676,-34.8" />
+      </Part>
+    </Brick>
+    <Brick refID="3" designID="6141">
+      <Part refID="3" designID="6141" partType="rigid" materials="2,0">
+        <Bone refID="3" transformation="-1.192093E-07,-1,0,1,-1.192093E-07,0,0,0,1,56.972,-5.193687,-38" />
+      </Part>
+    </Brick>
+    <Brick refID="4" designID="6141">
+      <Part refID="4" designID="6141" partType="rigid" materials="2,0">
+        <Bone refID="4" transformation="-1.192093E-07,-1,0,1,-1.192093E-07,0,0,0,1,56.972,-5.193667,-32.4" />
+      </Part>
+    </Brick>
+    <Brick refID="5" designID="3023" itemNos="302324">
+      <Part refID="5" designID="3023" partType="rigid" materials="24,0">
+        <Bone refID="5" transformation="4.172325E-07,-2.473593E-06,-1,1,-5.960464E-07,4.470348E-07,-5.662441E-07,-1,2.44379E-06,56.652,-1.993675,-34.8" />
+      </Part>
+    </Brick>
+    <Brick refID="6" designID="85984" itemNos="4547489">
+      <Part refID="6" designID="85984" partType="rigid" materials="1,0">
+        <Bone refID="6" transformation="-5.960466E-08,0.9999999,-2.801418E-06,1,0,5.960464E-08,1.192093E-07,-2.741813E-06,-0.9999999,56.972,-1.993677,-35.6" />
+      </Part>
+    </Brick>
+    <Brick refID="7" designID="2421" itemNos="6170693">
+      <Part refID="7" designID="2421" partType="rigid" materials="26,0">
+        <Bone refID="7" transformation="7.152547E-07,-1.072884E-06,1,1,-1.953674E-06,-5.960464E-07,2.072884E-06,1,9.536743E-07,56.772,-8.873675,-35.2" />
+      </Part>
+    </Brick>
+    <Brick refID="8" designID="4870">
+      <Part refID="8" designID="4870" partType="rigid" materials="1,0">
+        <Bone refID="8" transformation="4.76837E-07,0.9999999,6.556511E-07,1,-4.768372E-07,4.768372E-07,4.768372E-07,6.556511E-07,-0.9999999,56.662,-5.193667,-33.2" />
+      </Part>
+    </Brick>
+    <Brick refID="9" designID="4870">
+      <Part refID="9" designID="4870" partType="rigid" materials="1,0">
+        <Bone refID="9" transformation="0,0.9999999,1.788139E-07,1,0,0,0,1.788139E-07,-0.9999999,56.662,-5.193684,-38" />
+      </Part>
+    </Brick>
+    <Brick refID="10" designID="50254">
+      <Part refID="10" designID="50254" partType="rigid" materials="2,0">
+        <Bone refID="10" transformation="1.192093E-07,1,5.642599E-07,1,-1.192093E-07,0,6.726503E-14,5.6426E-07,-1,55.492,-5.433684,-37.48" />
+      </Part>
+    </Brick>
+    <Brick refID="11" designID="50254">
+      <Part refID="11" designID="50254" partType="rigid" materials="2,0">
+        <Bone refID="11" transformation="1.192093E-07,1,5.642599E-07,1,-1.192093E-07,0,6.726503E-14,5.6426E-07,-1,55.492,-5.433668,-32.68" />
+      </Part>
+    </Brick>
+    <Brick refID="12" designID="50254">
+      <Part refID="12" designID="50254" partType="rigid" materials="2,0">
+        <Bone refID="12" transformation="1.192093E-07,-1,6.435741E-06,1,-1.192093E-07,0,6.726503E-14,6.435741E-06,1,55.492,-5.433682,-37.72" />
+      </Part>
+    </Brick>
+    <Brick refID="13" designID="50254">
+      <Part refID="13" designID="50254" partType="rigid" materials="2,0">
+        <Bone refID="13" transformation="1.192093E-07,-1,6.435741E-06,1,-1.192093E-07,0,6.726503E-14,6.435741E-06,1,55.492,-5.433666,-32.92" />
+      </Part>
+    </Brick>
+  </Bricks>
+  <GroupSystems>
+    <BrickGroupSystem isHierarchical="true" isUnique="true">
+      <Group refID="1" transformation="1,0,0,0,1,0,0,0,1,0,0,0" pivot="0,0,0" brickRefs="">
+        <Group refID="2" transformation="1,0,0,0,1,0,0,0,1,0,0,0" pivot="0,0,0" brickRefs="0,1,2,3,4,5,6,7,8,9,10,11,12,13" />
+      </Group>
+    </BrickGroupSystem>
+  </GroupSystems>
+  <BuildingInstruction>
+    <Steps rotation="0,-90,0">
+      <Step refID="0" cameraType="standard">
+        <SubBuild refID="0">
+          <Step refID="1" cameraType="standard">
+            <In brickRef="0" />
+            <In brickRef="1" />
+            <In brickRef="2" />
+            <In brickRef="3" />
+            <In brickRef="4" />
+            <In brickRef="5" />
+            <In brickRef="6" />
+            <In brickRef="7" />
+            <In brickRef="8" />
+            <In brickRef="9" />
+            <In brickRef="10" />
+            <In brickRef="11" />
+            <In brickRef="12" />
+            <In brickRef="13" />
+          </Step>
+        </SubBuild>
+      </Step>
+    </Steps>
+  </BuildingInstruction>
+</LXFML>

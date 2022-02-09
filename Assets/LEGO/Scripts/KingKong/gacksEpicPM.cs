@@ -7,7 +7,7 @@ public class gacksEpicPM : MonoBehaviour
     public float speed;
     public float rotationSpeed;
 
-    static public bool isGrounded; 
+   [SerializeField] static public bool isGrounded; 
 
     [SerializeField] private float jumpForce = 10f;
 
