@@ -24,5 +24,10 @@ namespace Unity.LEGO.UI
                 LoadScene();
             }
         }
+        public void LoadScene1()
+        {
+            SceneManager.LoadScene(1);
+        }
+
     }
 }
